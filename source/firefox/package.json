@@ -1,0 +1,25 @@
+{
+  "name": "urlik",
+  "title": "url.ba shortener",
+  "id": "urlik@url.ba",
+  "description": "url shortener for http://url.ba (⌘+f1)",
+  "author": "Aid Arslanagic",
+  "license": "MPL 2.0",
+  "version": "0.2",
+  "homepage": "http://url.ba",
+  "icon": "data/icon-64.png",
+  "preferences": [{
+        "name": "privatePreference",
+        "title": "Keep links private?",
+        "description": "URL will not be shown in TOP 5 list or URLs",
+        "type": "bool",
+        "value": false
+    },
+    {
+        "name": "notificationPreference",
+        "title": "Show notifications?",
+        "description": "Show system notifications for shortening actions?",
+        "type": "bool",
+        "value": false
+    }]
+}

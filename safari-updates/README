@@ -1,0 +1,22 @@
+
+https://developer.apple.com/library/safari/documentation/Tools/Conceptual/SafariExtensionGuide/DistributingYourExtension/DistributingYourExtension.html#//apple_ref/doc/uid/TP40009977-CH19-SW1
+
+Putting Your Extension on a Web Server
+
+To make your extension available via a web server:
+
+    Build and sign the extension in Extension Builder to create a .safariextz file.
+
+    Include a link to a copy of your .safariextz folder on your website. Be sure to include a description of what your extension does.
+
+    Make sure your web server is serving the extension using the MIME type application/octet-stream.
+
+    Most web servers maintain a table of file extensions and MIME types, and provide an administrative tool for updating the table. For example, to add a MIME type to an Apache web server, use the AddType directive:
+
+    AddType application/octet-stream .safariextz
+
+    For IIS web servers, the MIME settings are typically accessed using the MMC by right-clicking the host computer name and choosing Properties, then adding a new MIME setting and file extension.
+
+For more information, consult the vendor’s documentation for your web server, or do a web search for “add MIME type” + YourWebServer + YourVersionNumber.
+
+Tip: If necessary, you can arrange to serve multiple versions of your extension for compatibility with different Safari versions. To do this, set up your download URL as a CGI script (such as PHP, Perl, or Python) that examines the HTTP User[&#8209;]Agent header string to determine which version of Safari the user is using, and sends a redirect via the Location header to the appropriate .safariextz file.

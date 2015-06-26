@@ -1,0 +1,26 @@
+{
+  "name": "url.ba shortener",
+  "short_name": "url.ba",
+  "version": "1.0",
+  "description": "Create and copy shortened urls to your clipboard.",
+  "background": {
+    "persistent": false,
+    "scripts": ["main.js"]
+  },
+  "browser_action": {
+    "default_icon": "icon-64.png",
+    "default_title": "Short URL"
+  },
+  "permissions": [
+    "activeTab",
+    "notifications",
+    "storage",
+    "http://url.ba/"
+  ],
+  "options_ui": {
+    "page": "options.html",
+    "chrome_style": true
+  },
+  "update_url": "http://url.ba/urlik/updates.xml",
+  "manifest_version": 2
+}
