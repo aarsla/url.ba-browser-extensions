@@ -74,6 +74,8 @@
 			<string>All</string>
 		</dict>
 	</dict>
+	<key>Update Manifest URL</key>
+	<string>http://url.ba/addons/updates.plist</string>
 	<key>Website</key>
 	<string>http://url.ba</string>
 </dict>

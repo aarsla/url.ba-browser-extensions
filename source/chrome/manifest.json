@@ -21,6 +21,6 @@
     "page": "options.html",
     "chrome_style": true
   },
-  "update_url": "http://url.ba/urlik/updates.xml",
+  "update_url": "http://url.ba/addons/updates.xml",
   "manifest_version": 2
 }
